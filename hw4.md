@@ -167,8 +167,8 @@ classDiagram
 
 類別分工：
 - **擷取層**：`RawMicCapture` 以 HoloLens 2 原始麥克風模式擷取多聲道音訊，分送給字幕、方向與環境音三個模組。
-- **字幕與方向（李文豪）**：`SpeechTest`、`DirectionEstimator`、`PairModel`、`Estimate`、`Dir`。
-- **紀錄、摘要與智慧回覆（高宗佑）**：`TranscriptRecorder`、`TranscriptEntry`、`ConversationSummarizer`、`SmartReplyManager`、`SmartReplySuggester`、`SmartReplySpeaker`。
+- **字幕、方向、紀錄與摘要（李文豪）**：`SpeechTest`、`DirectionEstimator`、`PairModel`、`Estimate`、`Dir`、`TranscriptRecorder`、`TranscriptEntry`、`ConversationSummarizer`。
+- **智慧回覆（高宗佑）**：`SmartReplyManager`、`SmartReplySuggester`、`SmartReplySpeaker`。
 - **環境音（葉育愷）**：`EnvironmentSoundDetector`、`SoundEvent`、`AlertPresenter`。
 - `SpeechConfig`、`GeminiConfig` 存放 API 金鑰，不放進版本控制。
 
